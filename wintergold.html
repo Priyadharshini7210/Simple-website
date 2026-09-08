@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Gold | Luxury Scents</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: #000;
+            color: white;
+        }
+
+        header {
+            padding: 25px 5%;
+            border-bottom: 1px solid #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        .product-page {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            padding: 70px 10%;
+        }
+
+        .product-image {
+            width: 450px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            max-width: 500px;
+        }
+
+        .category {
+            color: red;
+            letter-spacing: 4px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            color: #d4af37;
+            font-size: 28px;
+            margin: 25px 0;
+        }
+
+        .description {
+            color: #ccc;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .notes {
+            display: flex;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .note {
+            border: 1px solid #555;
+            padding: 12px 18px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .buy-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .buy-btn:hover {
+            background: #b00000;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 25px;
+            color: #aaa;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #333;
+            color: #888;
+            font-family: Arial, sans-serif;
+        }
+
+        @media (max-width: 800px) {
+            .product-page {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .product-image {
+                width: 90%;
+                height: 400px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            nav a {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Luxury Scents</div>
+
+            <div>
+                <a href="index.html">Home</a>
+                <a href="index.html#products">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="product-page">
+
+        <div class="product-image">
+            <img src="scent.1.jpg" alt="Winter Gold Perfume">
+        </div>
+
+
+        <div class="product-info">
+
+            <p class="category">LUXURY FRAGRANCE</p>
+
+            <h1>Winter Gold</h1>
+
+            <p class="description">
+                A warm and elegant fragrance crafted with delicate
+                notes that linger softly. Winter Gold creates a
+                timeless feeling of luxury and unforgettable presence.
+            </p>
+
+            <p class="price">₹1,499</p>
+
+            <div class="notes">
+                <div class="note">Warm</div>
+                <div class="note">Elegant</div>
+                <div class="note">Woody</div>
+            </div>
+
+            <button class="buy-btn">
+                Add to Cart
+            </button>
+
+            <br>
+
+            <a href="index.html" class="back">
+                ← Back to Products
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        © 2026 Luxury Scents | Luxury in Every Drop
+    </footer>
+
+</body>
+</html>
